@@ -435,12 +435,12 @@
                   };
                   CRM.BookingApp.vent.trigger("render:options", params);
                   //set configuration options for edit mode of subresource view
-                  var configSelectedId = this.$el.find('#configuration_select').data('selected-id');  //retrieve data from data-selected-id attribute
+                  var configSelectedId = self.$el.find('#configuration_select').data('selected-id');  //retrieve data from data-selected-id attribute
                   if(configSelectedId !== 'undefined'){
-                    this.$el.find('#configuration_select').val(configSelectedId);
+                    self.$el.find('#configuration_select').val(configSelectedId);
                   }
-                  this.$el.find('#config-loading').hide();
-                  this.$el.find('#configuration_select').show();
+                  self.$el.find('#config-loading').hide();
+                  self.$el.find('#configuration_select').show();
                 }
               }
             });
