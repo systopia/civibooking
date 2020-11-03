@@ -259,7 +259,7 @@
         var timeTxt = [initsdate.hours() < 10 ? '0' + initsdate.hours() : initsdate.hours(), ":", initsdate.minute() < 10 ? '0' + initsdate.minute() : initsdate.minute()].join("");
 
         //set the formatted months
-        var month=new ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12'];
+        var month = ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12'];
         var dateTxt = [ initsdate.format("DD"),"/", month[initsdate.months()],"/", initsdate.years()].join("");
         this.$el.find("#required_date").val(dateTxt);
         this.$el.find("#required_time").val(timeTxt);
